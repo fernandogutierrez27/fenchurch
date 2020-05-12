@@ -1,0 +1,135 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime js
+
+
+	<div class="qbootstrap-loader"></div>
+
+	<div id="page">
+		<nav class="qbootstrap-nav" role="navigation">
+			<div class="top-menu small">
+				<div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="top">
+								<div class="row">
+									<div class="col-md-4 col-md-push-4 text-center">
+										<div id="qbootstrap-logo">
+											<a href="/">
+												<div class="text-center">
+													<span class="anagrama small titulo-anagrama">FENCHURCH</span>
+												</div>
+												<div class="anagrama small bajada-1">Corporate Finance</div>
+												<div class="anagrama small bajada-2">1989 - 2020</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<div class="menu-1">
+								<ul>
+									@* <li class="active has-dropdown"><a href="index.html">Fenchurch</a></li> *@
+									<li class="has-dropdown">
+										<a href="#">Fenchurch</a>
+										<ul class="dropdown">
+                                            <li><a href="/Fenchurch">Fenchurch</a></li>
+                                            <li><a href="/Curriculum">Curriculum</a></li>
+                                        </ul>
+									</li>
+                                    <li class="has-dropdown">
+										<a href="#">Servicios</a>
+										<!-- <ul class="dropdown">
+										<li><a href="#">Serv 1</a></li>
+										<li><a href="#">Serv 2</a></li>
+										<li><a href="#">Serv 3</a></li>
+									</ul> -->
+									</li>
+									<li class="has-dropdown">
+										<a href="#">Red Internacional</a>
+									</li>
+									<li class="has-dropdown">
+										<a href="#">Operaciones</a>
+									</li>
+									<li class="has-dropdown">
+										<a href="articulos.html">Artículos</a>
+									</li>
+									<li class="has-dropdown">
+										<a href="#">Preguntas</a>
+									</li>
+									<li class="has-dropdown">
+										<a href="#">Contacto</a>
+									</li>
+
+									<!-- <li class="btn-cta"><a href="appointment.html"><span>Make an Appointment <i class="icon-calendar3"></i></span></a></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+        @Body
+	
+
+	</div>
+
+
+	<footer id="qbootstrap-footer2" role="contentinfo">
+		<div class="row copyright">
+			<div class="col-md-12 text-center">
+				<p>
+					<small class="block">FENCHURCH<span class="footer-separador">|</span>MALDONADO, 13<span
+							class="footer-separador">|</span>28006 - MADRID<span
+							class="footer-separador footer-separador-sm">|</span><br
+							class="footer-salto-linea"><a style="color: white" href="tel:+34911406490">+34 911 406
+							490</a></small>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+@code {
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            @* <!-- jQuery --> *@
+	        await js.InvokeVoidAsync("loadScript","js/jquery.min.js");
+            @* <!-- jQuery Sticky --> *@
+            await js.InvokeVoidAsync("loadScript","js/jquery.sticky.js");
+            @* <!-- jQuery Easing --> *@
+            await js.InvokeVoidAsync("loadScript","js/jquery.easing.1.3.js");
+            @* <!-- Bootstrap --> *@
+            await js.InvokeVoidAsync("loadScript","js/bootstrap.min.js");
+            @* <!-- Waypoints --> *@
+            await js.InvokeVoidAsync("loadScript","js/jquery.waypoints.min.js");
+            @* <!-- Stellar Parallax --> *@
+            await js.InvokeVoidAsync("loadScript","js/jquery.stellar.min.js");
+            @* <!-- Carousel --> *@
+            await js.InvokeVoidAsync("loadScript","js/owl.carousel.min.js");
+            @* <!-- Flexslider --> *@
+            await js.InvokeVoidAsync("loadScript","js/jquery.flexslider-min.js");
+            @* <!-- countTo --> *@
+            await js.InvokeVoidAsync("loadScript","js/jquery.countTo.js");
+            @* <!-- Magnific Popup --> *@
+            await js.InvokeVoidAsync("loadScript","js/jquery.magnific-popup.min.js");
+            await js.InvokeVoidAsync("loadScript","js/magnific-popup-options.js");
+            @* <!-- Sticky Kit --> *@
+            await js.InvokeVoidAsync("loadScript","js/sticky-kit.min.js");
+            @* <!-- Main --> *@
+            await js.InvokeVoidAsync("loadScript","js/main.js");
+
+            Console.WriteLine("JS should be invoked");
+
+        }
+    }
+}
+

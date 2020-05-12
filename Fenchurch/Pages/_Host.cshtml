@@ -1,0 +1,164 @@
+﻿@page "/"
+@namespace Fenchurch.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="es">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Fenchurch Corporate Finance</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- TODO: Completar meta-tags -->
+	<!-- <meta name="description" content="Agencia Financiera Corporativa" />
+	<meta name="keywords" content="fenchurch, corporate, finance" />
+	<meta name="author" content="aldeamedia" /> -->
+
+	<!-- Facebook and Twitter integration -->
+	<!-- <meta property="og:title" content=""/> -->
+	<!-- <meta property="og:image" content=""/> -->
+	<!-- <meta property="og:url" content=""/> -->
+	<!-- <meta property="og:site_name" content=""/> -->
+	<!-- <meta property="og:description" content=""/> -->
+	<!-- <meta name="twitter:title" content="" /> -->
+	<!-- <meta name="twitter:image" content="" /> -->
+	<!-- <meta name="twitter:url" content="" /> -->
+	<!-- <meta name="twitter:card" content="" /> -->
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&family=Roboto+Condensed&family=Source+Sans+Pro&display=swap"
+		rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+    <app>
+        <component type="typeof(App)" render-mode="ServerPrerendered" />
+    </app>
+
+    @* <div id="blazor-error-ui" style="position:absolute">
+        <environment include="Staging,Production">
+            An error has occurred. This application may no longer respond until reloaded.
+        </environment>
+        <environment include="Development">
+            An unhandled exception has occurred. See browser dev tools for details.
+        </environment>
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div> *@
+
+    <script src="_framework/blazor.server.js"></script>
+    <script>
+        window.loadScript = (_src) => {
+
+
+            return new Promise((resolve, reject) => {
+                
+                let script = document.createElement('script');
+                script.src = _src;
+                script.type = "text/javascript";
+                
+                // if the script returns okay, return resolve
+                script.onload = function () {
+                    //console.log(scriptPath + " loaded ok");
+                    resolve(_src);
+                };
+
+                // if it fails, return reject
+                script.onerror = function () {
+                    console.log(scriptPath + " load failed");
+                    reject(_src);
+                }
+
+                console.log("loading script",_src);
+
+                document["body"].appendChild(script);
+            })
+        }
+
+        
+	window.sliderMain = function() {
+        try {
+
+	  	$('#qbootstrap-hero .flexslider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function(){
+				setTimeout(function(){
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function(){
+				setTimeout(function(){
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+		  });
+		  
+		  $('#fenchurch .flexslider').flexslider({
+			animation: "slide",
+			slideshowSpeed: 5000,
+			directionNav: false,
+			start: function(){
+				// setTimeout(function(){
+				// 	$('.slider-text').removeClass('animated fadeInUp');
+				// 	$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				// }, 500);
+			},
+			before: function(){
+				// setTimeout(function(){
+				// 	$('.slider-text').removeClass('animated fadeInUp');
+				// 	$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				// }, 500);
+			}
+
+	  	});
+        } catch {}
+		
+
+	  	// $('#qbootstrap-hero .flexslider .slides > li').css('height', $(window).height());	
+	  	// $(window).resize(function(){
+	  	// 	$('#qbootstrap-hero .flexslider .slides > li').css('height', $(window).height());	
+	  	// });
+
+	};
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@inject IJSRuntime jsRuntime;
+
+<section id="qbootstrap-hero" style="background-image: url('@FullBgImage')">
+    <div class="flexslider">
+        <ul class="slides">
+            @if (CustomTitle == null) {
+                <li>
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>
+                                        <strong>FENCHURCH</strong><br>
+                                    </h1>
+                                    <h3>
+                                        Dedicada Exclusivamente al Asesoramiento de Fusiones y Adquisiciones
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>
+                                        <strong>FENCHURCH</strong><br>
+                                    </h1>
+                                    <h3>
+                                        Más de 30 Años de Experiencia
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>
+                                        <strong>FENCHURCH</strong><br>
+                                    </h1>
+                                    <h3>
+                                        Exclusivamente Especializada en Asesorar a Empresas Medianas
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            } else {
+              <li>
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>
+                                        <strong>@CustomTitle</strong><br>
+                                    </h1>
+                                    @* <h3>
+                                        Exclusivamente Especializada en Asesorar a Empresas Medianas
+                                    </h3> *@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>  
+            }
+        </ul>
+    </div>
+</section>
+
+@code {
+    [Parameter]
+    public string BackgroundImage { get; set; }
+    [Parameter]
+    public string CustomTitle { get; set; }
+    public string FullBgImage { get; set; }
+    private string defaultBackgroundImage = "header-bg";
+
+    protected override void OnInitialized() {
+        BackgroundImage = BackgroundImage ?? defaultBackgroundImage;
+        FullBgImage = "../img/"+BackgroundImage+".jpg";
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender) {
+        await jsRuntime.InvokeVoidAsync("sliderMain");
+    }
+    
+
+}
