@@ -67,9 +67,11 @@
                                     <h1>
                                         <strong>@CustomTitle</strong><br>
                                     </h1>
-                                    @* <h3>
-                                        Exclusivamente Especializada en Asesorar a Empresas Medianas
-                                    </h3> *@
+                                    @if (CustomSubtitle != null) {
+                                        <h3>
+                                            @CustomSubtitle
+                                        </h3>
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -85,6 +87,8 @@
     public string BackgroundImage { get; set; }
     [Parameter]
     public string CustomTitle { get; set; }
+    [Parameter]
+    public string CustomSubtitle { get; set; }
     public string FullBgImage { get; set; }
     private string defaultBackgroundImage = "header-bg";
 

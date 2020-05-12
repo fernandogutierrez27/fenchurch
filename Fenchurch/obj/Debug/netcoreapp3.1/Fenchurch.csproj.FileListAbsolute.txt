@@ -51,3 +51,5 @@ C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CurriculumComponent.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\BootstrapHeroComponent.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\CurriculumComponent.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\OperacionesComponent.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\OperacionesComponent.razor.g.cs
