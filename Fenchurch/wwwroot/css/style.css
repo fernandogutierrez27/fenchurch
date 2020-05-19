@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: 'Exo 2';
+  font-family: "Exo 2";
   src: url("../fonts/Exo2-VariableFont_wght.ttf");
 }
 /* =======================================================
@@ -2176,3 +2176,47 @@ figure {
   height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.texto-cajas h1,
+.texto-cajas h2,
+.texto-cajas h3,
+.texto-cajas h4,
+.texto-cajas h5,
+.texto-cajas h6,
+.texto-cajas p {
+  font-family: "Exo 2" !important;
+  padding: 0px 20px;
+}
+
+.qbootstrap-nav ul.dropdown li {
+  padding: 10px 20px !important;
+  transition: background-color 0.5s ease-in-out;
+  margin-bottom: 0 !important;
+}
+
+.qbootstrap-nav ul.dropdown li:hover {
+  background-color: darkred !important;
+  padding: 10px 20px !important
+}
+
+ul.dropdown {
+  padding: 0 !important;
+}
+
+#qbootstrap-hero .flexslider .slides li:after {
+  background-color: rgba(0,0,0,0.5);
+}
+
+button.btn-submit {
+  background-color: #f7f7f7;
+  border: solid 1px darkred;
+  color: darkred;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+button.btn-submit:hover {
+  background-color: darkred;
+  color: white;
+}

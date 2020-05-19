@@ -53,3 +53,9 @@ C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\Boot
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\CurriculumComponent.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\OperacionesComponent.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\OperacionesComponent.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\VentaEmpresasComponent.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\VentaEmpresasComponent.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Contacto.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\Contacto.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\CompraEmpresasComponent.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\CompraEmpresasComponent.razor.g.cs
