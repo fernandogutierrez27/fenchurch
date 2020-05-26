@@ -1,6 +1,6 @@
 @inject IJSRuntime jsRuntime;
 
-<section id="qbootstrap-hero" style="background-image: url('@FullBgImage')">
+<section id="qbootstrap-hero" style="background-image: url('@FullBgImage'); height:@height">
     <div class="flexslider">
         <ul class="slides">
             @if (CustomTitle == null) {
@@ -8,13 +8,21 @@
                     <div class="overlay"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="col-md-10 col-md-offset-1 text-center slider-text">
                                 <div class="slider-text-inner">
                                     <h1>
                                         <strong>FENCHURCH</strong><br>
                                     </h1>
                                     <h3>
-                                        Dedicada Exclusivamente al Asesoramiento de Fusiones y Adquisiciones
+                                        Exclusivamente Fusiones y Adquisiciones
+                                    </h3>
+                                    <br>
+                                    <h3>
+                                        Especializado en asesorar a empresa medianas
+                                    </h3>
+                                    <br>
+                                    <h3>
+                                        Más de 30 años de experiencia práctica
                                     </h3>
                                 </div>
                             </div>
@@ -22,7 +30,7 @@
                     </div>
                 </li>
 
-                <li>
+                @* <li>
                     <div class="overlay"></div>
                     <div class="container">
                         <div class="row">
@@ -56,21 +64,23 @@
                             </div>
                         </div>
                     </div>
-                </li>
+                </li> *@
             } else {
               <li>
                     <div class="overlay"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="col-md-10 col-md-offset-1 text-center slider-text">
                                 <div class="slider-text-inner">
                                     <h1>
                                         <strong>@CustomTitle</strong><br>
                                     </h1>
                                     @if (CustomSubtitle != null) {
-                                        <h3>
-                                            @CustomSubtitle
-                                        </h3>
+                                        @foreach(var txt in @CustomSubtitle.Split("\n")) {
+                                            <h3>
+                                                @txt
+                                            </h3>
+                                        }
                                     }
                                 </div>
                             </div>
@@ -92,9 +102,15 @@
     public string FullBgImage { get; set; }
     private string defaultBackgroundImage = "header-bg";
 
+    private string height = "450px";
+
     protected override void OnInitialized() {
+        if (CustomTitle == null) {
+            height = "100vh";
+        }
         BackgroundImage = BackgroundImage ?? defaultBackgroundImage;
         FullBgImage = "../img/"+BackgroundImage+".jpg";
+
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender) {

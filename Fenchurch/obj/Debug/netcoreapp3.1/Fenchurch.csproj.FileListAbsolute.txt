@@ -17,7 +17,6 @@ C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Error.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
-C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Fenchurch.dll
@@ -28,7 +27,6 @@ C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\App.razor.
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\Error.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
-C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs

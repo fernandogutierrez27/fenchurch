@@ -148,7 +148,7 @@ figure {
   padding: 0 !important;
 }
 .anagrama {
-  font-family: "Roboto Condensed" !important;
+  font-family: "Nanum Gothic" !important;
   text-transform: none;
   text-align: center !important;
   -webkit-transition: 0.5s;
@@ -158,12 +158,17 @@ figure {
 
 .anagrama.titulo-anagrama {
   /* border-bottom: solid 1px lightgray; */
-  font-size: 4.4rem;
+  /* font-size: 4.4rem; */
   color: white !important;
   border-bottom: solid 1px goldenrod;
   text-align: center !important;
   margin-right: auto;
   margin-left: auto;
+  font-size: 30px;
+  font-family: inherit !important;
+  font-weight: 500;
+  font-family: "Nanum Gothic" !important;
+  letter-spacing: -0.6px;
 }
 #qbootstrap-offcanvas .anagrama.titulo-anagrama,
 .anagrama.titulo-anagrama.small {
@@ -171,16 +176,10 @@ figure {
 }
 
 .anagrama.bajada-1 {
-  font-size: 2rem;
-  letter-spacing: 0.45rem;
-  font-weight: lighter;
-  margin-top: -0.5rem;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-top: -15px;
 }
-#qbootstrap-offcanvas .anagrama.bajada-1,
-.anagrama.bajada-1.small {
-  font-size: 1rem;
-}
-
 .anagrama.bajada-2 {
   font-size: 2.75rem;
   margin-top: -0.25em;
@@ -395,7 +394,7 @@ figure {
 
 #qbootstrap-hero {
   /* min-height: 650px; */
-  height: 100vh;
+  /* height: 450px; */
   /* background: url(../img/header-bg.jpg); */
   background-size: cover;
   background-position: center center;
@@ -424,8 +423,12 @@ figure {
   background-size: cover;
   background-position: top center;
   /* min-height: 630px; */
-  height: 100vh;
+  height: 450px;
   position: relative;
+}
+
+.index #qbootstrap-hero .flexslider .slides li {
+  height: 100vh;
 }
 #qbootstrap-hero .flexslider .slides li:after {
   position: absolute;
@@ -434,7 +437,7 @@ figure {
   left: 0;
   right: 0;
   content: "";
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2) !important;
   z-index: 1;
 }
 #qbootstrap-hero .flexslider .flex-control-nav {
@@ -463,9 +466,10 @@ figure {
   z-index: 9;
 }
 #qbootstrap-hero .flexslider .slider-text > .slider-text-inner {
-  display: table-cell;
-  vertical-align: middle;
+  /* display: table-cell; */
+  /* vertical-align: middle; */
   /* height: 700px; */
+  margin-top: 25% !important;
 }
 #qbootstrap-hero .flexslider .slider-text > .slider-text-inner h1,
 #qbootstrap-hero .flexslider .slider-text > .slider-text-inner h2,
@@ -2186,6 +2190,12 @@ figure {
 .texto-cajas p {
   font-family: "Exo 2" !important;
   padding: 0px 20px;
+}
+
+.texto-cajas h4 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .qbootstrap-nav ul.dropdown li {

@@ -160,10 +160,10 @@ figure {
   margin-right: auto;
   margin-left: auto;
 }
-#qbootstrap-offcanvas .anagrama.titulo-anagrama,
+/* #qbootstrap-offcanvas .anagrama.titulo-anagrama,
 .anagrama.titulo-anagrama.small {
   font-size: 3rem;
-}
+} */
 
 .anagrama.bajada-1 {
   font-size: 2rem;
@@ -171,19 +171,19 @@ figure {
   font-weight: lighter;
   margin-top: -0.5rem;
 }
-#qbootstrap-offcanvas .anagrama.bajada-1,
+/* #qbootstrap-offcanvas .anagrama.bajada-1,
 .anagrama.bajada-1.small {
   font-size: 1rem;
-}
+} */
 
 .anagrama.bajada-2 {
   font-size: 2.75rem;
   margin-top: -0.25em;
 }
-#qbootstrap-offcanvas .anagrama.bajada-2,
+/* #qbootstrap-offcanvas .anagrama.bajada-2,
 .anagrama.bajada-2.small {
   font-size: 1.85rem;
-}
+} */
 
 .qbootstrap-nav .num,
 .qbootstrap-nav .loc {
