@@ -59,3 +59,5 @@ C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\CompraEmpresasComponent.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\RedInternacionalComponent.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\RedInternacionalComponent.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ApuntesComponent.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\ApuntesComponent.razor.g.cs

@@ -1,6 +1,6 @@
 @inject IJSRuntime jsRuntime;
 
-<section id="qbootstrap-hero" style="background-image: url('@FullBgImage'); height:@height">
+<section id="qbootstrap-hero" style="background-image: url('@FullBgImage'); height:@height; background-position: @BgPos">
     <div class="flexslider">
         <ul class="slides">
             @if (CustomTitle == null) {
@@ -99,15 +99,23 @@
     public string CustomTitle { get; set; }
     [Parameter]
     public string CustomSubtitle { get; set; }
+
+    [Parameter]
+    public string BgPos { get; set; }
     public string FullBgImage { get; set; }
     private string defaultBackgroundImage = "header-bg";
 
-    private string height = "560px";
+    private string height = "600px";
 
     protected override void OnInitialized() {
         if (CustomTitle == null) {
             height = "100vh";
         }
+
+        if (BgPos == null) {
+            BgPos = "center";
+        }
+
         BackgroundImage = BackgroundImage ?? defaultBackgroundImage;
         FullBgImage = "../img/"+BackgroundImage+".jpg";
 
