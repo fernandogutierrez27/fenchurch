@@ -57,7 +57,7 @@
 										<a href="/Operaciones">Operaciones</a>
 									</li>
 									<li class="has-dropdown">
-										<a href="/Apuntes">Apuntes</a>
+										<a href="/Articulos">Articulos</a>
 									</li>
 									<li class="has-dropdown">
 										<a href="/Contacto">Contacto</a>
@@ -73,7 +73,7 @@
 			</div>
 		</nav>
 
-        @Body
+		@Body
 	
 
 	</div>
@@ -126,8 +126,13 @@
             await js.InvokeVoidAsync("loadScript","js/magnific-popup-options.js");
             @* <!-- Sticky Kit --> *@
             await js.InvokeVoidAsync("loadScript","js/sticky-kit.min.js");
+			@* Perfect Scrollbar *@
+            await js.InvokeVoidAsync("loadScript","js/perfect-scrollbar.js");
+            await js.InvokeVoidAsync("loadScript","https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js");
+			
             @* <!-- Main --> *@
             await js.InvokeVoidAsync("loadScript","js/main.js");
+            @* await js.InvokeVoidAsync("loadPS"); *@
 
             Console.WriteLine("JS should be invoked");
 

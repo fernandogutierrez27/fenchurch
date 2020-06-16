@@ -336,6 +336,7 @@
 			parallax();
 			sliderMain();
 			testimonialCarousel();
+
 			// stickyFunction();
 		});
 	},100)

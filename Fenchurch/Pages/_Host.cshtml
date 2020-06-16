@@ -55,6 +55,7 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/perfect-scrollbar.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -64,11 +65,15 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar/dist/simplebar.css" />
+	<script src="https://cdn.jsdelivr.net/npm/simplebar/dist/simplebar.min.js"></script>
 
 </head>
 <body>
     <app>
-        <component type="typeof(App)" render-mode="ServerPrerendered" />
+		<div data-simplebar>
+        	<component type="typeof(App)" render-mode="ServerPrerendered" />
+		</div>
     </app>
 
     @* <div id="blazor-error-ui" style="position:absolute">
@@ -110,6 +115,11 @@
                 document["body"].appendChild(script);
             })
         }
+
+	@* window.loadPS = function() {
+		ps = new PerfectScrollbar('body');
+		console.log("perfect-scrollbar should be loaded")
+	} *@
 
         
 	window.sliderMain = function() {
