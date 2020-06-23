@@ -61,3 +61,13 @@ C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\RedInternacionalComponent.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ArticulosComponent.razor.g.cs
 C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\ArticulosComponent.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Articulos\15-Ebitda.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\Articulos\15-Ebitda.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Articulos\16-proceso-de-compraventa-de-una-empresa.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\Articulos\16-proceso-de-compraventa-de-una-empresa.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Articulos\BASE.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\Articulos\BASE.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Articulos\17-calendario-de-actividad.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\Articulos\17-calendario-de-actividad.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Articulos\19-definiciones-financieras.razor.g.cs
+C:\www\fenchurchApp\Fenchurch\Fenchurch\obj\Debug\netcoreapp3.1\Razor\Pages\Articulos\19-definiciones-financieras.razor.g.cs

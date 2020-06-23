@@ -2234,3 +2234,11 @@ button.btn-submit:hover {
   background-color: darkred;
   color: white;
 }
+
+.no-header {
+  margin-top: 150px;
+}
+
+.no-header h1 {
+  color: darkred;
+}
