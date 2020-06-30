@@ -2222,7 +2222,7 @@ ul.dropdown {
 }
 
 button.btn-submit {
-  background-color: #f7f7f7;
+  background-color: #ccc;
   border: solid 1px darkred;
   color: darkred;
   padding: 10px 20px;
@@ -2241,4 +2241,12 @@ button.btn-submit:hover {
 
 .no-header h1 {
   color: darkred;
+}
+
+.text-justified {
+  text-align: justify;
+}
+
+.w-100 {
+  width: 100% !important;
 }
