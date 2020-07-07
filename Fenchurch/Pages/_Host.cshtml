@@ -42,6 +42,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&family=Roboto+Condensed&family=Source+Sans+Pro&display=swap"
 		rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="/css/animate.css">
@@ -66,13 +67,11 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar/dist/simplebar.css" />
-	<script src="https://cdn.jsdelivr.net/npm/simplebar/dist/simplebar.min.js"></script>
 
 </head>
 <body>
     <app>
-		<div data-simplebar>
+		<div>
         	<component type="typeof(App)" render-mode="ServerPrerendered" />
 		</div>
     </app>
@@ -121,6 +120,13 @@
 		ps = new PerfectScrollbar('body');
 		console.log("perfect-scrollbar should be loaded")
 	} *@
+
+	function imprimir() {
+		setTimeout(() => {
+			window.print();
+		},1)
+		return false;
+	}
 
         
 	window.sliderMain = function() {
